@@ -1,0 +1,59 @@
+@charset "utf-8";
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+/* 新浪使用方式
+.clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+*/
+.clearfix{ /*兼容 IE*/
+  zoom: 1;
+}
+.tran-center{
+  position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+/* display 框的类型 */
+.dis-n{display: none}
+.dis-tab{display: table;}
+.dis-tabc{display: table-cell}
+.dis-in{display: inline}
+.dis-inb{display: inline-block}
+.dis-fl{display:-webkit-box;display:-webkit-flex;display: -moz-box;display:-ms-flexbox;display:flex;}
+.flex-1{
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
+
+.pull-left {
+  float: left;
+}
+.pull-right{
+  float: right;
+}
+/* 字体颜色 */
+.col-pri{
+  color: #1593ff;
+}
+.col-a3{
+  color: #a3a3a3;
+}
